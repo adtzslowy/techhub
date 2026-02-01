@@ -13,7 +13,7 @@ export default function FaqSection() {
       {/* HEADER */}
       <RevealOnScroll>
         <div className="mx-auto max-w-3xl px-6 text-center">
-          <h2 className="text-3xl font-semibold tracking-tight text-white">
+          <h2 className="text-5xl font-semibold tracking-tight text-white">
             Frequently Asked Questions
           </h2>
           <p className="mt-4 text-base text-zinc-300">

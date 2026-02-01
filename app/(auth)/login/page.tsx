@@ -1,3 +1,4 @@
+import LoginPage from "./LoginPage"
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -5,8 +6,8 @@ export const metadata: Metadata = {
   description: "Sign In form to access dashboard"
 };
 
-export default function LoginPage() {
+export default function LoginForm() {
   return (
-    <div></div>
+    <LoginPage />
   )
 }
