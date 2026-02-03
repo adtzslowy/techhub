@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Bricolage_Grotesque, Inter, JetBrains_Mono } from "next/font/google";
 import { BackToTop } from "./components/layout/BackToTop";
+import { Providers } from "@/components/Providers";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -38,8 +39,10 @@ export default function RootLayout({
     <html lang="id" className={`${grotesque.variable} ${sans.variable} ${mono.variable} `}>
       <body className="min-h-screen bg-background font-sans text-foreground antialiased"
       >
-        {children}
-        <BackToTop/>
+        <Providers>
+          {children}
+          <BackToTop />
+        </Providers>
       </body>
     </html>
   );
